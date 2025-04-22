@@ -883,7 +883,7 @@
 			<isee:placeholder name="Economy 2 Outputs">
 				<eqn>GDP.Nominal_GDP[1] + GDP.&quot;Real_GDP_in_2021c$&quot;[1] + Circular_Flow.private_consumption[1] + Government.government_consumption[1] + Finance.total_investment[1] + Employment.annual_aggregate_wages[1] + Circular_Flow.Labour_share_of_GDP[1] + Employment.Employed[1] + Employment.Unemployed[1] + Employment.unemployment_rate[1] + Government.debt_to_GDP_ratio[1] + GDP.nominal_gdp_growth_rate_deviation_from_average_in_calibration_period_summed[1] + GDP.real_gdp_growth_rate_deviation_from_average_in_calibration_period_summed[1] + Inflation.gdp_difference[1] + Circular_Flow.bottom_40_share_of_real_income[1]</eqn>
 			</isee:placeholder>
-			<module name="Sea level rise Impacts\nand Adaptation" isee:label="" url="/Users/bschoenberg/code/WorldTrans/clones/me/WorldTransFRIDA/FRIDA_Modules/Sea level rise Impacts and Adaptation.itmx">
+			<module name="Sea level rise Impacts\nand Adaptation" isee:label="" url="G:/My Drive/worldTrans_models/WorldTransFRIDA/FRIDA_Modules/Sea level rise Impacts and Adaptation.itmx">
 				<format scale_by="auto"/>
 				<connect to="Sea_level_rise_Impacts_and_Adaptation.No_SLR_adaptation_strategy" from="Government_Regulations.No_SLR_adaptation_strategy"/>
 				<connect2 to="Sea_level_rise_Impacts_and_Adaptation.No_SLR_adaptation_strategy" from="Government_Regulations.No_SLR_adaptation_strategy"/>
@@ -1011,7 +1011,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="141" isee:scroll_y="109" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="141" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="12.51pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -2449,7 +2449,7 @@ Assuming no one is migrating in 1980 b/c of SLR</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="2166.67" isee:scroll_y="1095" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="4" isee:page_rows="4" isee:scroll_x="2575.83" isee:scroll_y="545" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -5384,7 +5384,7 @@ Interface explosion stopper</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="6" isee:page_rows="6" isee:scroll_x="135" isee:scroll_y="1334.17" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="6" isee:page_rows="6" isee:scroll_x="362.5" isee:scroll_y="1084.17" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -6489,7 +6489,7 @@ Interface explosion stopper</doc>
 					<from>productivity_yield_of_exploratory_investment</from>
 					<to>indicated_productivity_growth_from_bank_exploration</to>
 				</connector>
-				<text_box uid="229" x="129.583" y="1521.67" width="260" height="220.5">They are not comparable, Ben was right. And it is not sufficient to say the bank investments are more productive, and let that be decided by the size of investment relative to safe assets, without defining how much more. I believe the below gets around that.
+				<text_box uid="229" x="127.083" y="1758.42" width="260" height="220.5">They are not comparable, Ben was right. And it is not sufficient to say the bank investments are more productive, and let that be decided by the size of investment relative to safe assets, without defining how much more. I believe the below gets around that.
 
 furthermore. The structure that was previously decided on had the productivity growth be a function of &quot;orientation&quot; which is upstream from actual investment. It is, after all, the investment that ends up as productivity gains, and thus productivity should be downstream of investment and not circumventing it directly from &quot;orientation&quot;.</text_box>
 				<aux label_side="right" x="875.5" y="1266.08" name="time for\nproductivity\nto affect firing"/>
@@ -6681,7 +6681,7 @@ furthermore. The structure that was previously decided on had the productivity g
 					<to>total_defaults</to>
 				</connector>
 				<aux label_side="top" x="953.5" y="1184.17" name="firing from\nproductivity gains"/>
-				<connector uid="286" angle="30.5792">
+				<connector uid="286" angle="22.2248">
 					<from>fraction_fired_from_productivity_gains</from>
 					<to>firing_from_productivity_gains</to>
 				</connector>
@@ -6726,6 +6726,32 @@ furthermore. The structure that was previously decided on had the productivity g
 					<from>safe_loan_defaults_1</from>
 					<to>total_defaults</to>
 				</connector>
+				<stacked_container uid="298" x="235.667" y="1144.84" width="615" height="492.5" minimized="true">
+					<graph width="615" height="492.5" type="area" isee:sum_stacked_legend="true" isee:stacked_show_hover_values="true" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="18" num_y_grid_lines="11" num_x_labels="18" num_y_labels="11" title="Productivity" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+						</plot>
+						<plot color="red" isee:keep_zero_visible="true" pen_width="1" index="1" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+							<isee:data name="no failure rate"/>
+						</plot>
+						<plot color="#00AA00" isee:keep_zero_visible="true" pen_width="1" index="2" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+							<isee:data name="no labour damage"/>
+						</plot>
+						<plot color="#FFAA00" isee:keep_zero_visible="true" pen_width="1" index="3" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+							<isee:data name="no govt damage"/>
+						</plot>
+						<plot color="#7F00FF" isee:keep_zero_visible="true" pen_width="1" index="4" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+							<isee:data name="no slr damage"/>
+						</plot>
+						<plot color="#FF55FF" isee:keep_zero_visible="true" pen_width="1" index="5" show_y_axis="true">
+							<entity name="realised_productivity[1]"/>
+						</plot>
+					</graph>
+				</stacked_container>
 				<alias color="blue" background="white" font_style="italic" label_side="left" uid="12" x="655.25" y="1050.17" width="18" height="18">
 					<shape type="circle" radius="18"/>
 					<of>wage_rate_in_billions_per_million_people</of>
@@ -8583,7 +8609,7 @@ To control extreme policy only</doc>
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="6" isee:page_rows="9" isee:scroll_x="1590" isee:scroll_y="1747" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="6" isee:page_rows="9" isee:scroll_x="1839" isee:scroll_y="1446" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -10544,7 +10570,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="210.833" isee:scroll_y="165.833" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1101" page_height="772" isee:page_cols="3" isee:page_rows="3" isee:scroll_y="50" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -10840,7 +10866,7 @@ ELSE
 					</from>
 					<to>accumulating_real_gdp_growth_rate_deviation_from_average_in_calibration_period</to>
 				</connector>
-				<stacked_container uid="75" x="813.286" y="185">
+				<stacked_container uid="75" x="813.286" y="185" minimized="true">
 					<graph width="350" height="250" comparative="true" type="time_series" show_grid="false" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="0" num_y_grid_lines="0" num_x_labels="5" num_y_labels="3" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="real_GDP_growth_rate[1]"/>
@@ -10892,6 +10918,22 @@ ELSE
 					</from>
 					<to>historical_nominal_GDP_growth_rate_explosion_stopper</to>
 				</connector>
+				<stacked_container uid="86" x="260.667" y="100.541" width="668.333" height="538.584">
+					<graph width="668.333" height="538.584" type="time_series" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="18" num_y_grid_lines="11" num_x_labels="18" num_y_labels="11" title="GDP" isee:fill_intensity="0.1" isee:stacked_y_max="12000000" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="black" isee:keep_zero_visible="true" pen_width="2" index="0" show_y_axis="true">
+							<entity name='"Real_GDP_in_2021c$"[1]'/>
+							<isee:data name="EMB"/>
+						</plot>
+						<plot color="red" isee:keep_zero_visible="true" pen_width="2" index="1" show_y_axis="true">
+							<entity name='"Real_GDP_in_2021c$"[1]'/>
+							<isee:data name="no damages counterfactual"/>
+						</plot>
+						<plot color="#00AA00" pen_style="dotted" isee:keep_zero_visible="true" pen_width="2" index="2" show_y_axis="true">
+							<entity name='"Real_GDP_in_2021c$"[1]'/>
+							<isee:data name="0 deg counterfactual"/>
+						</plot>
+					</graph>
+				</stacked_container>
 				<alias font_style="italic" label_side="top" uid="9" x="442.67" y="85" width="18" height="18">
 					<of>Nominal_GDP</of>
 				</alias>
@@ -12328,7 +12370,7 @@ In massive inflation spikes prevents the government from not doing any consumpti
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="7" isee:page_rows="7" isee:scroll_x="715.833" isee:scroll_y="667.5" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="7" isee:page_rows="7" isee:scroll_x="420" isee:scroll_y="450" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -13446,6 +13488,32 @@ In massive inflation spikes prevents the government from not doing any consumpti
 					<from>maximum_percentage_of_government_budget_to_transfer_payments</from>
 					<to>government_transfers</to>
 				</connector>
+				<stacked_container uid="408" x="538.627" y="995.053" width="767.5" height="565.833" minimized="true">
+					<graph width="767.5" height="565.833" type="area" isee:sum_stacked_legend="true" isee:stacked_show_hover_values="true" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="18" num_y_grid_lines="11" num_x_labels="18" num_y_labels="11" title="government spending" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
+						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+						</plot>
+						<plot color="red" isee:keep_zero_visible="true" pen_width="1" index="1" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+							<isee:data name="no failure rate"/>
+						</plot>
+						<plot color="#008F44" isee:keep_zero_visible="true" pen_width="1" index="2" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+							<isee:data name="no labour damage"/>
+						</plot>
+						<plot color="#FF7F00" isee:keep_zero_visible="true" pen_width="1" index="3" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+							<isee:data name="no govt damage"/>
+						</plot>
+						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="4" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+							<isee:data name="no slr damage"/>
+						</plot>
+						<plot color="#FF55FF" isee:keep_zero_visible="true" pen_width="1" index="5" show_y_axis="true">
+							<entity name="government_consumption[1]"/>
+						</plot>
+					</graph>
+				</stacked_container>
 				<alias font_style="italic" label_side="right" label_angle="315" uid="73" x="1345.42" y="1937.17" width="18" height="18">
 					<of>baseline_interest</of>
 				</alias>
@@ -14304,7 +14372,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="818" page_height="571" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="437.5" isee:scroll_y="225" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="3" isee:page_rows="3" isee:scroll_x="852" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -14974,7 +15042,7 @@ ELSE
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="768" page_height="588" isee:page_cols="2" isee:page_rows="2" isee:scroll_y="180" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1102" page_height="773" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="238.333" isee:scroll_y="405" zoom="120" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>

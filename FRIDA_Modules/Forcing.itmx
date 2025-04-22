@@ -511,7 +511,7 @@
 				<dimensions>
 					<dim name="Run"/>
 				</dimensions>
-				<eqn> Effective_Radiative_Forcing_from_Natural_Sources +  Anthropogenic_Effective_Radiative_Forcing</eqn>
+				<eqn>Effective_Radiative_Forcing_from_Natural_Sources +  Anthropogenic_Effective_Radiative_Forcing +tambora_event_ERF</eqn>
 				<units>W/(metre^2)</units>
 			</aux>
 			<aux name="Total Land use forcing" access="input">
@@ -527,6 +527,15 @@
 				</dimensions>
 				<eqn>{Enter equation for use when not hooked up to other models}</eqn>
 				<units>W/(metre^2)</units>
+			</aux>
+			<aux name="tambora event ERF">
+				<eqn>TIME</eqn>
+				<gf>
+					<xscale min="1980" max="2150"/>
+					<yscale min="-10" max="10"/>
+					<ypts>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.493,-3.267,-5.89,-3.16,-2.56,-1.09,-0.108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</ypts>
+				</gf>
+				<units>W/metre^2</units>
 			</aux>
 		</variables>
 		<views>
@@ -577,7 +586,7 @@
 				<isee:iframe color="black" background="white" text_align="left" vertical_text_align="top" font_size="12pt" border_width="thin" border_style="solid"/>
 				<isee:financial_table color="black" background="#E0E0E0" text_align="right" font_size="12pt" hide_border="false" auto_fit="true" first_column_width="250" other_column_width="100" header_font_style="normal" header_font_weight="bold" header_text_decoration="none" header_text_align="center" header_vertical_text_align="center" header_font_color="black" header_font_family="Arial" header_font_size="14pt" header_text_padding="2" header_text_border_color="black" header_text_border_width="thin" header_text_border_style="none"/>
 			</style>
-			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="80" isee:scroll_y="222" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
+			<view isee:show_pages="false" background="white" page_width="1123" page_height="793" isee:page_cols="2" isee:page_rows="2" isee:scroll_x="114" isee:scroll_y="257" isee:popup_graphs_are_comparative="true" isee:enable_non_negative_highlights="false" type="stock_flow">
 				<style color="black" background="white" font_style="normal" font_weight="normal" text_decoration="none" text_align="center" vertical_text_align="center" font_color="black" font_family="Arial" font_size="10pt" padding="2" border_color="black" border_width="thin" border_style="none">
 					<stock color="blue" background="white" font_color="blue" font_size="11pt" label_side="top">
 						<shape type="rectangle" width="45" height="35"/>
@@ -741,6 +750,11 @@
 				<connector uid="26" angle="242.684">
 					<from>Minor_GHGs_Effective_Radiative_Forcing</from>
 					<to>Anthropogenic_Effective_Radiative_Forcing</to>
+				</connector>
+				<aux x="768.417" y="970" name="tambora event ERF"/>
+				<connector uid="27" angle="166.914">
+					<from>tambora_event_ERF</from>
+					<to>Total_Effective_Radiative_Forcing</to>
 				</connector>
 			</view>
 		</views>
