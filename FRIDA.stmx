@@ -65,7 +65,7 @@
 		<dim name="Renewable_Age_Group" size="7"/>
 		<dim name="Run" size="1"/>
 	</dimensions>
-	<isee:prefs saved_runs="100" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
+	<isee:prefs saved_runs="5" keep="false" show_module_prefix="true" live_update_on_drag="true" show_restore_buttons="false" layer="model" isee:design="Deluxe Prev-Next Blue Green Pastel" isee:design_custom="false" interface_secure_mode="true" interface_scale_ui="true" interface_max_page_width="10000" interface_max_page_height="10000" interface_min_page_width="0" interface_min_page_height="0" rerun_on_structure_change="false" rifp="true">
 		<isee:ignored_words>
 			<isee:ignored_word>WolrdTrans</isee:ignored_word>
 			<isee:ignored_word>WorldTrans</isee:ignored_word>
@@ -85,9 +85,6 @@
 	<isee:number_format_extenders/>
 	<default_format scale_by="1"/>
 	<data>
-		<export frequency="on_demand" orientation="horizontal" resource="G:/My Drive/Data/FRIDA_documentation/frida_v2.1.xlsx" type="Excel" worksheet="Sheet1" precomputed="false" isee:format="numbers">
-			<table name="fridav2" use_settings="true"/>
-		</export>
 		<import isee:overwrite="false" isee:timevarying="true" resource="r../Data/frida_input_data.csv"/>
 	</data>
 	<isee:sensi_specs_list active_index="0">
@@ -1518,8 +1515,8 @@
 				<connect2 to="energy_demand.real_GDP_per_person" from="Demographics.real_GDP_per_person"/>
 				<connect to="energy_demand.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="energy_demand.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="energy_demand.switch_energy_demand" from="Climate.switch_energy_demand"/>
-				<connect2 to="energy_demand.switch_energy_demand" from="Climate.switch_energy_demand"/>
+				<connect to="energy_demand.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="energy_demand.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="energy_demand.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect2 to="energy_demand.switch_energy_demand_policy" from="Behavioral_Choices.switch_energy_demand_policy"/>
 				<connect to="energy_demand.today" from="Climate.climate_impact_stoptime"/>
@@ -1602,8 +1599,8 @@
 				<connect2 to="energy_supply.Population" from="Demographics.Population"/>
 				<connect to="Damages.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="Damages.Surface_Temperature_Anomaly_1" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="Damages.switch_energy_capital_damage" from="Climate.switch_energy_capital_damage"/>
-				<connect2 to="Damages.switch_energy_capital_damage" from="Climate.switch_energy_capital_damage"/>
+				<connect to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Damages.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="Damages.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="efficiency_reduction_in_power_plants.selected_energy_supply_hydroelectric_damages_case" from="Climate_Units.selected_energy_supply_hydroelectric_damages_case"/>
@@ -1612,8 +1609,8 @@
 				<connect2 to="efficiency_reduction_in_power_plants.selected_energy_supply_damages_case" from="Climate_Units.selected_energy_supply_thermoelectric_damages_case"/>
 				<connect to="efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
 				<connect2 to="efficiency_reduction_in_power_plants.Surface_Temperature_Anomaly" from="Energy_Balance_Model.Surface_Temperature_Anomaly"/>
-				<connect to="efficiency_reduction_in_power_plants.switch_power_plant_efficiency_damage" from="Climate.switch_power_plant_efficiency_damage"/>
-				<connect2 to="efficiency_reduction_in_power_plants.switch_power_plant_efficiency_damage" from="Climate.switch_power_plant_efficiency_damage"/>
+				<connect to="efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="efficiency_reduction_in_power_plants.today" from="Climate.climate_impact_stoptime"/>
 				<connect2 to="efficiency_reduction_in_power_plants.today" from="Climate.climate_impact_stoptime"/>
 				<connect to="Finance.stranded_capital" from="fossil_energy.stranded_capital"/>
@@ -1947,10 +1944,12 @@
 				<connect2 to="Concrete.switch_concrete_impact" from="Climate.switch_concrete_impact"/>
 				<connect to="Demographics.switch_demography_damage" from="Climate.switch_demography_damage"/>
 				<connect2 to="Demographics.switch_demography_damage" from="Climate.switch_demography_damage"/>
-				<connect to="Damages.switch_energy_capital_damage" from="Climate.switch_energy_capital_damage"/>
-				<connect2 to="Damages.switch_energy_capital_damage" from="Climate.switch_energy_capital_damage"/>
-				<connect to="energy_demand.switch_energy_demand" from="Climate.switch_energy_demand"/>
-				<connect2 to="energy_demand.switch_energy_demand" from="Climate.switch_energy_demand"/>
+				<connect to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="Damages.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect to="efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="efficiency_reduction_in_power_plants.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect to="energy_demand.switch_energy_damage" from="Climate.switch_energy_damage"/>
+				<connect2 to="energy_demand.switch_energy_damage" from="Climate.switch_energy_damage"/>
 				<connect to="Finance.switch_economy_damage" from="Climate.switch_finance_damage"/>
 				<connect2 to="Finance.switch_economy_damage" from="Climate.switch_finance_damage"/>
 				<connect to="Government.switch_government_damage" from="Climate.switch_government_damage"/>
@@ -1969,8 +1968,6 @@
 				<connect2 to="Crop.switch_landuse_damage" from="Climate.switch_landuse_damage"/>
 				<connect to="Freshwater.switch_landuse_damage" from="Climate.switch_landuse_damage"/>
 				<connect2 to="Freshwater.switch_landuse_damage" from="Climate.switch_landuse_damage"/>
-				<connect to="efficiency_reduction_in_power_plants.switch_power_plant_efficiency_damage" from="Climate.switch_power_plant_efficiency_damage"/>
-				<connect2 to="efficiency_reduction_in_power_plants.switch_power_plant_efficiency_damage" from="Climate.switch_power_plant_efficiency_damage"/>
 				<connect to="Climate_Risk_Perception.switch_sea_level_rise_climate_risk_perception" from="Climate.switch_sea_level_rise_climate_risk_perception"/>
 				<connect2 to="Climate_Risk_Perception.switch_sea_level_rise_climate_risk_perception" from="Climate.switch_sea_level_rise_climate_risk_perception"/>
 				<connect to="Sea_level_rise_costs_and_impacts.switch_sea_level_rise_fatalities_damage" from="Climate.switch_sea_level_rise_fatalities_damage"/>
@@ -3433,7 +3430,7 @@ This is what determines when the model stops calculating</doc>
 					</graph>
 				</stacked_container>
 				<isee:placeholder x="904.75" y="652.833" name="Calibrated Variables"/>
-				<isee:selector x="930.5" y="745.25" width="328" height="30" select_placeholder="true" placeholder="Calibrated_Variables"/>
+				<isee:selector x="842.5" y="551.25" width="328" height="30" select_placeholder="true" placeholder="Calibrated_Variables"/>
 				<stacked_container uid="80" x="28.5" y="1680.5" width="568" height="300">
 					<graph font_size="24pt" legend_position="none" isee:hide_border="true" axis_title_font_size="18pt" axis_label_font_size="14pt" width="568" height="300" comparative="true" type="box" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="9" num_y_grid_lines="6" num_x_labels="5" num_y_labels="6" title="a) Surface Temperature Anomaly (°C)" isee:fill_intensity="0.1" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<isee:time_points>
@@ -3787,8 +3784,8 @@ This is what determines when the model stops calculating</doc>
 					<from>Government_Regulations</from>
 					<to>Economy</to>
 				</connector>
-				<stacked_container uid="151" x="72" y="375.25" width="1088" height="679" minimized="true">
-					<table orientation="horizontal" interval="1" report_balances="beginning" report_flows="instantaneous" width="1088" height="679" comparative="true" isee:export_name="fridav2" isee:mark_for_export="true" title="Diagnostics of key variables">
+				<stacked_container uid="151" x="1045" y="713.5" width="623" height="250" minimized="true">
+					<table orientation="horizontal" interval="1" report_balances="beginning" report_flows="instantaneous" width="623" height="250" comparative="true" title="Diagnostics of key variables">
 						<item type="time"/>
 						<item>
 							<entity name="energy_demand.demand_for_energy[1]"/>
@@ -3800,61 +3797,13 @@ This is what determines when the model stops calculating</doc>
 							<entity name="Demographics.Population[1]"/>
 						</item>
 						<item>
+							<entity name="Demographics.real_GDP_per_capita[1]"/>
+						</item>
+						<item>
 							<entity name="Animal_Products.animal_products_production[1]"/>
 						</item>
 						<item>
 							<entity name="Crop.crop_production[1]"/>
-						</item>
-						<item>
-							<entity name='GDP."Real_GDP_in_2021c$"[1]'/>
-						</item>
-						<item>
-							<entity name="energy_supply.Total_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="bio_fuel_energy.bio_fuel_secondary_energy_output[1]"/>
-						</item>
-						<item>
-							<entity name="fossil_energy_coal.Secondary_Fossil_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="fossil_energy_gas.Secondary_Fossil_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="fossil_energy_oil.Secondary_Fossil_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="hydropower_energy.Hydropower_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="renewable_energy.Total_Solar_and_Wind_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="nuclear_energy.Nuclear_Energy_Output[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Gross_Investments_in_Hydropower_Energy_capacity[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Coal_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Gas_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Oil_Gross_Investments_in_Fossil_Fuel_Extraction_Capital[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Gross_Investments_in_Solar_Energy_Capacity[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Gross_Investments_in_Biofuel_Capacity[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Investments_in_Nuclear_Capacity[1]"/>
-						</item>
-						<item>
-							<entity name="energy_investments.Gross_Investments_in_wind_Energy_Capacity[1]"/>
 						</item>
 					</table>
 				</stacked_container>
@@ -3866,7 +3815,7 @@ This is what determines when the model stops calculating</doc>
 					<from>Economy</from>
 					<to>Resources</to>
 				</connector>
-				<stacked_container uid="156" x="1136.71" y="124.339" width="570" height="470" visible_index="15">
+				<stacked_container uid="156" x="1184.71" y="371.339" width="570" height="470" visible_index="15">
 					<graph width="570" height="470" comparative="true" type="time_series" show_grid="true" isee:tick_type="none" include_units_in_legend="false" plot_numbers="false" isee:label_pie_slices="false" isee:show_pie_borders="true" num_x_grid_lines="13" num_y_grid_lines="8" num_x_labels="13" num_y_labels="8" title="Atmospheric CO2 Concentration" isee:fill_intensity="0.1" to="2100" isee:allow_zero_axis="true" left_axis_multi_scale="false" left_axis_auto_scale="true" left_include_units="true" right_axis_multi_scale="false" right_axis_auto_scale="true" right_include_units="true">
 						<plot color="blue" isee:keep_zero_visible="true" pen_width="1" index="0" show_y_axis="true">
 							<entity name="CO2_Forcing.Atmospheric_CO2_Concentration[1]"/>
@@ -4324,7 +4273,10 @@ Lorem ipsum dolor sit amet</text_box>
 		</views>
 	</model>
 	<isee:user_controlled>
-		<ent name="Climate.switch sea level rise climate risk perception" preserve="true"/>
+		<ent name="Simulation End" preserve="true"/>
+		<ent name="Government Regulations.tax on CO2e emissions" preserve="true"/>
+		<ent name="Government Regulations.tax rate on newly installed solar energy capacity" preserve="true"/>
+		<ent name="Government Regulations.tax rate on newly installed wind energy capacity" preserve="true"/>
 		<ent name="Climate.switch sea level rise protection cost damage" preserve="true"/>
 		<ent name="Climate.switch sea level rise fatalities damage" preserve="true"/>
 		<ent name="Climate.switch sea level rise relocation cost damage" preserve="true"/>
@@ -4335,13 +4287,11 @@ Lorem ipsum dolor sit amet</text_box>
 		<ent name="Climate.switch demography damage" preserve="true"/>
 		<ent name="Climate.switch finance damage" preserve="true"/>
 		<ent name="Climate.switch labor damage" preserve="true"/>
+		<ent name="Climate.switch energy damage" preserve="true"/>
 		<ent name="Climate.switch concrete impact" preserve="true"/>
 		<ent name="Climate.switch landuse damage" preserve="true"/>
 		<ent name="Climate.switch behavioral impact" preserve="true"/>
 		<ent name="Climate.climate impact stoptime" preserve="true"/>
-		<ent name="Climate.switch power plant efficiency damage" preserve="true"/>
-		<ent name="Climate.switch energy demand" preserve="true"/>
-		<ent name="Climate.switch energy capital damage" preserve="true"/>
 	</isee:user_controlled>
 	<macro name="INFLATION_IMPACT_GROWTH_RATE">
 		<eqn>trend in input</eqn>
